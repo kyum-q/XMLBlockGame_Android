@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<BlockGame>
+    <Screen>
+        <Size w="500" h="550"/>
+    </Screen>
+    <InitPanel>
+        <Font font="타이포_쌍문동 B" fontSize="30"  r="255" g="255" b="255"  />
+        <GameSentence start="태양으로" win="점령완료" lose="점령 실패" />
+        <InitBg>space2</InitBg>
+    </InitPanel>
+    <GamePanel>
+        <GameBg>space2</GameBg>
+        <Sound>
+            <BallSound hitSound="silencer1"
+                removeSound="silencer2"
+                dieSound="power_up" />
+            <GameSound winEndSound="cheerful"
+                loseEndSound="barrel_exploding"
+                backGroundSound="game_music" />
+        </Sound>
+
+        <!-- color="r,g,b" -->
+        <Attack delay="10" count="10" ballCountDelay="150" img="total1"/>
+        <Aim r="128" g="12" b="2" />
+        <User w="60" h="60" life="3" attackImg="spacecraft" img="spacecraft" />
+        <FinalScore winScore="200" />
+        <Block>
+            <!-- if(hitCount == static) staticBlock -->
+            <Obj type="moveAndGone" x="100" y="0" w="100" h="50" hitCount ="20" score="200" moveDelay="300" moveDirection="5" blockDown="-1" img="sun"/>
+
+            <Obj type="moveAndGone" x="10" y="60" w="50" h="50" hitCount ="5" score="0" moveDelay="300" moveDirection="-10" blockDown="-1" img="meteorite4"/>
+            <Obj type="moveAndGone" x="110" y="60" w="50" h="50" hitCount ="8" score="0" moveDelay="300" moveDirection="10" blockDown="-1" img="meteorite4"/>
+            <Obj type="moveAndGone" x="210" y="60" w="50" h="50" hitCount ="8" score="0" moveDelay="300" moveDirection="-10" blockDown="-1" img="meteorite4"/>
+            <Obj type="moveAndGone" x="310" y="60" w="50" h="50" hitCount ="8" score="0" moveDelay="300" moveDirection="10" blockDown="-1" img="meteorite4"/>
+            <Obj type="moveAndGone" x="410" y="60" w="50" h="50" hitCount ="5" score="0" moveDelay="300" moveDirection="-10" blockDown="-1" img="meteorite4"/>
+
+            <Obj type="gone" x="35" y="120" w="50" h="50" hitCount ="3" score="0" blockDown="-1" img="meteorite3"/>
+            <Obj type="gone" x="85" y="120" w="50" h="50" hitCount ="3" score="0" blockDown="-1" img="meteorite3"/>
+            <Obj type="gone" x="135" y="120" w="50" h="50" hitCount ="3" score="0" blockDown="-1" img="meteorite3"/>
+            <Obj type="gone" x="185" y="120" w="50" h="50" hitCount ="5" score="0" blockDown="-1" img="meteorite3"/>
+            <Obj type="gone" x="235" y="120" w="50" h="50" hitCount ="5" score="0" blockDown="-1" img="meteorite3"/>
+            <Obj type="gone" x="285" y="120" w="50" h="50" hitCount ="3" score="0" blockDown="-1" img="meteorite3"/>
+            <Obj type="gone" x="335" y="120" w="50" h="50" hitCount ="3" score="0" blockDown="-1" img="meteorite3"/>
+            <Obj type="gone" x="385" y="120" w="50" h="50" hitCount ="3" score="0" blockDown="-1" img="meteorite3"/>
+
+            <Obj type="moveAndGone" x="35" y="180" w="50" h="50" hitCount ="2" score="0" moveDelay="300" moveDirection="-5"  blockDown="-1" img="meteorite2"/>
+            <Obj type="gone" x="85" y="180" w="50" h="50" hitCount ="2" score="0" blockDown="-1" img="meteorite2"/>
+            <Obj type="gone" x="135" y="180" w="50" h="50" hitCount ="2" score="0" blockDown="-1" img="meteorite2"/>
+            <Obj type="gone" x="185" y="180" w="50" h="50" hitCount ="2" score="0" blockDown="-1" img="meteorite2"/>
+            <Obj type="gone" x="235" y="180" w="50" h="50" hitCount ="3" score="0" blockDown="-1" img="meteorite2"/>
+            <Obj type="gone" x="285" y="180" w="50" h="50" hitCount ="3" score="0" blockDown="-1" img="meteorite2"/>
+            <Obj type="gone" x="335" y="180" w="50" h="50" hitCount ="3" score="0" blockDown="-1" img="meteorite2"/>
+            <Obj type="moveAndGone" x="385" y="180" w="50" h="50" hitCount ="2" score="0" moveDelay="300" moveDirection="5" blockDown="-1" img="meteorite2"/>
+
+            <Obj type="gone" x="85" y="240" w="50" h="50" hitCount ="10" score="0" blockDown="-1" img="meteorite1"/>
+            <Obj type="gone" x="135" y="240" w="50" h="50" hitCount ="5" score="0" blockDown="-1" img="meteorite1"/>
+            <Obj type="gone" x="185" y="240" w="50" h="50" hitCount ="10" score="0" blockDown="-1" img="meteorite1"/>
+            <Obj type="gone" x="235" y="240" w="50" h="50" hitCount ="5" score="0" blockDown="-1" img="meteorite1"/>
+            <Obj type="gone" x="285" y="240" w="50" h="50" hitCount ="10" score="0" blockDown="-1" img="meteorite1"/>
+            <Obj type="gone" x="335" y="240" w="50" h="50" hitCount ="5" score="0" blockDown="-1" img="meteorite1"/>
+
+            <Obj type="gone" x="10" y="300" w="50" h="50" hitCount ="3" score="0" blockDown="1" img="meteorite5"/>
+            <Obj type="gone" x="110" y="300" w="50" h="50" hitCount ="3" score="0" blockDown="1" img="meteorite5"/>
+            <Obj type="gone" x="210" y="300" w="50" h="50" hitCount ="3" score="0" blockDown="1" img="meteorite5"/>
+            <Obj type="gone" x="310" y="300" w="50" h="50" hitCount ="3" score="0" blockDown="1" img="meteorite5"/>
+            <Obj type="gone" x="410" y="300" w="50" h="50" hitCount ="3" score="0" blockDown="1" img="meteorite5"/>
+
+            <Obj type="gone" x="160" y="360" w="50" h="50" hitCount ="3" score="0" blockDown="1" img="meteorite5"/>
+            <Obj type="gone" x="210" y="420" w="50" h="50" hitCount ="3" score="0" blockDown="1" img="meteorite5"/>
+            <Obj type="gone" x="260" y="360" w="50" h="50" hitCount ="3" score="0" blockDown="1" img="meteorite5"/>
+
+        </Block>
+    </GamePanel>
+</BlockGame>

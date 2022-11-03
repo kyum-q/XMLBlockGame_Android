@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<BlockGame>
+    <Screen>
+        <Size w="1000" h="1000"/>
+    </Screen>
+
+    <InitPanel>
+        <Font font="타이포_쌍문동 B" fontSize="30"  r="255" g="255" b="255"  />
+        <GameSentence start="산타를 도와 선물을 전달하자" win="선물을 무사히 전달했어!" lose="선물이 모자라,,," />
+        <InitBg>christmas4</InitBg>
+    </InitPanel>
+
+    <GamePanel>
+        <GameBg>christmas1</GameBg>
+        <Sound>
+            <BallSound hitSound="button_push"
+                removeSound="remove"
+                dieSound="water_droplet" />
+            <GameSound winEndSound="win"
+                loseEndSound="lose"
+                backGroundSound="christmas" />
+        </Sound>
+        <Attack count="1" delay="5" ballCountDelay="500" img="snow"/>
+        <Aim r="255" g="255" b="255" />
+        <User w="100" h="100" life="3"
+            attackImg="santa"
+            img="santa2" />
+        <FinalScore winScore="100" />
+        <Block>
+            <!-- if(hitCount == static) staticBlock -->
+            <!-- Obj x="x위치" y="y위치" w="width" h="height" hitCount ="맞아야하는 수" score="없앨을 때 얻는 score"
+                moveDelay="좌우로 delay" moveDirection="좌우로 움직일경우 방향(+:-> || -:<-)" blockDown="1:아래로 떨어짐 -1:안떨어짐" img="block이미지" -->
+
+            <Obj type="gone" x="10" y="10" w="100" h="100" hitCount ="1" score="10" blockDown="1" img="present1"/>
+            <Obj type="gone" x="110" y="10" w="100" h="100"  hitCount ="1" score="10" blockDown="1" img="present3"/>
+            <Obj type="gone" x="210" y="10" w="100" h="100" hitCount ="2" score="15" blockDown="1" img="present4"/>
+
+            <Obj type="gone" x="10" y="110" w="100" h="100" hitCount ="2" score="15" blockDown="1" img="present1"/>
+            <Obj type="gone" x="110" y="110" w="100" h="100" hitCount ="3" score="20" blockDown="1" img="present3"/>
+            <Obj type="gone" x="210" y="110" w="100" h="100" hitCount ="3" score="20" blockDown="1" img="present1"/>
+
+            <Obj type="moveAndGone" x="70" y="210" w="100" h="100" hitCount ="2" score="20" moveDelay="50" moveDirection="-5" blockDown="1" img="stick"/>
+
+            <Obj type="gone" x="10" y="310" w="100" h="100" hitCount ="3" score="20" blockDown="1" img="present2"/>
+            <Obj type="gone" x="110" y="310" w="100" h="100" hitCount ="3" score="20" blockDown="1" img="snow"/>
+            <Obj type="gone" x="210" y="310" w="100" h="100" hitCount ="3" score="20" blockDown="1" img="present5"/>
+
+            <Obj type="move" x="200" y="210" w="100" h="100" moveDelay="100" moveDirection="20" blockDown="1" img="stick"/>
+            <Obj type="moveAndGone" x="100" y="410" w="100" h="100" hitCount ="2" score="20" moveDelay="100" moveDirection="-5" blockDown="1" img="stick"/>
+
+            <Obj type="gone" x="70" y="510" w="100" h="100" hitCount ="1" score="20"  blockDown="1" img="snow"/>
+            <Obj type="gone" x="170" y="510" w="100" h="100" hitCount ="1" score="20" blockDown="1" img="present3"/>
+            <Obj type="gone" x="270" y="510" w="100" h="100" hitCount ="1" score="20" blockDown="1" img="present4"/>
+
+            <!-- 움직이는 블록은 x값이 0이면 잘 움직임 아니면 잘 안움직임 why?? : 해결 -->
+            <!-- 블록 주변에 있는 다른 블록을 맞췄을 때 형태는 있지만 사라진? 그런 블럭 생김 why?? : 해결 -->
+
+        </Block>
+    </GamePanel>
+</BlockGame>

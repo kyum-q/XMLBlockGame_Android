@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<BlockGame>
+    <Screen>
+        <Size w="500" h="500"/>
+    </Screen>
+    <InitPanel>
+        <Font font="타이포_쌍문동 B" fontSize="30"  r="248" g="237" b="31"  />
+        <GameSentence start="레고 레고" win="레고 성 완성!!" lose="레고를 더 모아줘" />
+        <InitBg>legobg</InitBg>
+    </InitPanel>
+    <GamePanel>
+        <Sound>
+            <BallSound hitSound="blop"
+                removeSound="button_push"
+                dieSound="mario_jumping" />
+            <GameSound winEndSound="win"
+                loseEndSound="wanwan"
+                backGroundSound="happy" />
+        </Sound>
+
+        <!-- color="r,g,b" -->
+        <GameBg>lego_bg8</GameBg>
+        <Attack delay="10" count="15" ballCountDelay="100" img="lego_ball"/>
+        <Aim r="248" g="237" b="31" />
+        <User w="60" h="60" life="5" attackImg="lego_face" img="lego_face2" />
+        <FinalScore winScore="200" />
+        <Block>
+            <!-- if(hitCount == static) staticBlock -->
+            <Obj type="gone" x="0" y="10" w="50" h="50" hitCount ="1" score="10"  blockDown="1" img="lego1"/>
+            <Obj type="gone" x="50" y="10" w="50" h="50" hitCount ="1" score="10"  blockDown="1" img="lego2"/>
+            <Obj type="gone" x="100" y="10" w="50" h="50" hitCount ="2" score="15"  blockDown="1" img="lego2"/>
+            <Obj type="gone" x="150" y="10" w="50" h="50" hitCount ="3" score="20"  blockDown="1" img="lego1"/>
+            <Obj type="gone" x="200" y="10" w="50" h="50" hitCount ="3" score="20"  blockDown="1" img="lego5"/>
+            <Obj type="gone" x="300" y="10" w="50" h="50" hitCount ="3" score="20"  blockDown="1" img="lego1"/>
+
+            <Obj type="gone" x="50" y="60"  w="50" h="50" hitCount ="2" score="15"  blockDown="1" img="lego4"/>
+            <Obj type="gone" x="100" y="60" w="50" h="50"  hitCount ="3" score="20"  blockDown="1" img="lego1"/>
+            <Obj type="gone" x="300" y="60" w="50" h="50"  hitCount ="3" score="20"  blockDown="1" img="lego6"/>
+
+            <Obj type="gone" x="0" y="110" w="75" h="50"  hitCount ="7" score="20" moveDelay="80" moveDirection="5" blockDown="1" img="lego3"/>
+            <Obj type="move" x="300" y="110" w="50" h="50" moveDelay="100" moveDirection="5" blockDown="1" img="lego2"/>
+
+            <Obj type="gone" x="10" y="160"  w="50" h="50"  hitCount ="3" score="20"  blockDown="1" img="lego6"/>
+            <Obj type="gone" x="60" y="160" w="50" h="50" hitCount ="3" score="20"  blockDown="1" img="lego6"/>
+            <Obj type="gone" x="110" y="160" w="50" h="50" hitCount ="3" score="20"  blockDown="1" img="lego2"/>
+            <Obj type="gone" x="160" y="160" w="50" h="50" hitCount ="3" score="20"  blockDown="1" img="lego1"/>
+            <Obj type="gone" x="210" y="160" w="50" h="50" hitCount ="3" score="20"  blockDown="1" img="lego5"/>
+            <Obj type="gone" x="260" y="160" w="50" h="50" hitCount ="3" score="20"  blockDown="1" img="lego1"/>
+            <Obj type="dontGone" x="310" y="160"  w="75" h="50" blockDown="1" img="lego7"/>
+
+            <Obj type="gone" x="50" y="210" w="50" h="50" hitCount ="10" score="20"  blockDown="1" img="lego4"/>
+            <Obj type="gone" x="150" y="210"  w="50" h="50" hitCount ="20" score="20"  blockDown="1" img="lego4"/>
+            <Obj type="gone" x="300" y="210" w="50" h="50"  hitCount ="6" score="20"  blockDown="1" img="lego6"/>
+            <Obj type="dontGone" x="350" y="210" w="60" h="50" blockDown="1" img="lego3"/>
+
+            <Obj type="gone" x="50" y="260" w="50" h="50" hitCount ="3" score="20"  blockDown="1" img="lego2"/>
+            <Obj type="gone" x="310" y="260" w="50" h="50" hitCount ="3" score="20"  blockDown="1" img="lego1"/>
+            <Obj type="gone" x="340" y="260" w="50" h="50" hitCount ="20" score="20"  blockDown="1" img="lego5"/>
+
+        </Block>
+    </GamePanel>
+</BlockGame>
