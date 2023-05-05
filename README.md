@@ -18,3 +18,5 @@ XML을 통해 만들어지는 BlockShootingGame 게임(Android 버전)
 # 실행화면
 ![Group 15](https://user-images.githubusercontent.com/109158497/236491542-11320c12-cfb6-47f9-84ef-4db213f36784.png)
 
+# 실행영상
+https://user-images.githubusercontent.com/109158497/236496934-74027dac-346f-41cd-bc3d-d32ba54a884c.mov
