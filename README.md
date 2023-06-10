@@ -26,5 +26,5 @@ https://user-images.githubusercontent.com/109158497/236496934-74027dac-346f-41cd
 
 <br>
 
-## 개발 언어
+## 💡&nbsp; 개발 언어
 <img src="https://img.shields.io/badge/JAVA-FF7800?style=for-the-badge&logo=Java&logoColor=#7F52FF"> <img src="https://img.shields.io/badge/android-3DDC84?style=for-the-badge&logo=Android&logoColor=white">
