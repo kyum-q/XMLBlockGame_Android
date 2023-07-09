@@ -8,7 +8,7 @@ XML을 통해 만들어지는 Block Shooting Game 게임 (Android 버전)
 배경 소리와 함께 즐거운 블록 맞추기 게임 BlockGame을 즐겨보세요<br>
 블록은 움직이기도 안움직이기도 해요<br>
 블록의 점수는 모두 다릅니다<br>
-<br>
+<br> 
 목표점수에 도달하면 게임 Clear!
 <br>
 <br>
