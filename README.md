@@ -2,7 +2,7 @@
 XML을 통해 만들어지는 Block Shooting Game 게임 (Android 버전)
 <br>
 
-## 작품 소개
+## ✍🏻&nbsp; 작품 소개
 **아이템을 맞춰 점수를 획득하세요**<br>
 <br>
 배경 소리와 함께 즐거운 블록 맞추기 게임 BlockGame을 즐겨보세요<br>
@@ -14,15 +14,17 @@ XML을 통해 만들어지는 Block Shooting Game 게임 (Android 버전)
 <br>
 블록은 다양한 테마로 변경할 수 있어요
 <br>
+
+## 🖥&nbsp; 실행 화면
 <br>
-## 게임 실행 화면
 
 ![Group 15](https://user-images.githubusercontent.com/109158497/236491542-11320c12-cfb6-47f9-84ef-4db213f36784.png)
+**<p align="center">[게임 스크린 샷]</p>**
 <br>
 
-## 게임 실행 영상
 
-https://user-images.githubusercontent.com/109158497/236496934-74027dac-346f-41cd-bc3d-d32ba54a884c.mov
+![화면 실행 영상](https://github.com/kyum-q/AndroidBlockGame/assets/109158497/72cf84e9-3c4d-4cd9-8914-7343ae0b6b09)
+**<p align="center">[게임 실행 영상]</p>**
 
 <br>
 
